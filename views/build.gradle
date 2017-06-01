@@ -1,0 +1,24 @@
+apply plugin: 'war'
+
+//jar {
+//    manifest {
+//        attributes 'Main-Class': 'com.epam.bootapplication.BoardApplication'
+//    }
+//}
+
+dependencies {
+    compile(project(':services'))
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.3.RELEASE'
+    compile group: 'javax.servlet', name: 'jstl', version: '1.2'
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '1.5.3.RELEASE'
+
+    providedCompile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '8.5.14'
+
+    //    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '1.5.3.RELEASE'
+//    compile group: 'org.springframework.security', name: 'spring-security-taglibs', version: '4.2.2.RELEASE'
+
+
+}
+
+

@@ -1,0 +1,4 @@
+rootProject.name = 'ComplaintBoardApplication'
+include 'models','services','views'
+
+
